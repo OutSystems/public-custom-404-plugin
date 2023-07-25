@@ -86,8 +86,8 @@ Please note that modifying the XML is an error-prone operation. In case the XML 
 Look for the following common mistakes:
 ### Not including single quotes:
 ```xslt
-    <!-- Define new Error page redirect string -->
-    <xsl:param name="new404" select="'/Custom404Plugin/NotFound.aspx?app=MyStore&amp;page=NotFound'"/>
+<!-- Define new Error page redirect string -->
+<xsl:param name="new404" select="'/Custom404Plugin/NotFound.aspx?app=MyStore&amp;page=NotFound'"/>
 ```
 Make sure the URL defined for the variable “new404” is between single quotes and double quotes simultaneously.
 
